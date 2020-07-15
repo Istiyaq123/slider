@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body{
                 background: url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
@@ -21,9 +22,35 @@
                 left: 800px;
                 top: 0px;
             }
+            .arrow {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+            .aleft {
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+            .button{
+                background: none;
+                border: none;
+                width: 80px;
+                position: absolute;
+                top: 50%;
+            }
+            .aleft{
+                transform: rotate(180deg);
+                left: 2%;
+            }
+            .aright{
+                right: 2%;
+            }
         </style>
     </head>
     <body>
+        <button id="aleft" class="button aleft"><img width="100%" src="https://istiyaq123.github.io/assets/Shape%201.png"></button>
+        <button id="aright" class="button aright"><img width="100%" src="https://istiyaq123.github.io/assets/Shape%201.png"></button>
         <img id="left" class="left" src="" height="327">
         <img id="middle" class="middle" src="" height="327">
         <img id="right" class="right" src="" height="327">
